@@ -24,7 +24,6 @@
               <ul class="nav-dropdown">
                 <li><a href="Organizing-Committee.html">Organizing Committee</a></li>
                 <li><a href="Program-Committee.html">Program Committee</a></li>
-                <li><a href="Technical-Committee.html">Technical Committee</a></li>
               </ul>
             </li>
             <li data-page="calls">
