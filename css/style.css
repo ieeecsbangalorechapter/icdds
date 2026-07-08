@@ -1,0 +1,167 @@
+@import url("style-modern.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+th,
+td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+th {
+  background: rgba(15, 52, 96, 0.06);
+  color: var(--primary);
+  text-align: left;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.banner,
+.page-hero,
+.schedule-section,
+.section,
+#about,
+#contact,
+#venue,
+#speaker,
+#footer,
+.about-description,
+.important-dates-container,
+.committee-section {
+  position: relative;
+}
+
+.container,
+.container-fluid {
+  width: min(1200px, calc(100% - 2rem));
+}
+
+.banner-nav,
+.banner-box,
+.schedule-description,
+.para,
+.section-copy,
+.about-description p,
+#contact p,
+#venue p {
+  color: var(--gray-text);
+}
+
+.banner-box a,
+.schedule-button,
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-accent {
+  border-radius: 999px;
+}
+
+.banner-box a,
+.schedule-button,
+.btn-primary,
+.btn-accent {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--white) !important;
+  border: 0;
+  box-shadow: var(--shadow-md);
+}
+
+.banner-box a:hover,
+.schedule-button:hover,
+.btn-primary:hover,
+.btn-accent:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(15, 52, 96, 0.22);
+  color: var(--primary);
+  background: rgba(15, 52, 96, 0.04);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.back-to-top {
+  border-radius: 999px;
+}
+
+.section-title,
+.schedule-title,
+.banner-header,
+.banner h1,
+.section-header h3 {
+  letter-spacing: -0.03em;
+}
+
+.content-card,
+.date-card,
+.about-description,
+.schedule-card,
+.speaker-card,
+.venue-card,
+.committee-card,
+table,
+.contact-card {
+  backdrop-filter: blur(10px);
+}
+
+.nav-menu .menu-active > a,
+.nav-menu li.menu-active > a {
+  color: var(--accent-teal);
+}
+
+.nav-dropdown {
+  border: 1px solid rgba(15, 52, 96, 0.08);
+}
+
+.nav-menu a,
+.nav-dropdown a {
+  font-family: var(--font-primary);
+}
+
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  th {
+    border-bottom: 0;
+  }
+
+  td {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}

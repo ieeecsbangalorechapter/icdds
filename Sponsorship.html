@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sponsorship - ICDDS 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="img/favicon.ico" rel="icon">
+  <link href="css/style-aiml.css" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    .back-to-top {
+      position: fixed; right: 24px; bottom: 24px; width: 40px; height: 40px;
+      background: var(--primary); color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; box-shadow: var(--shadow-md);
+      opacity: 0; pointer-events: none; transition: opacity .3s; z-index: 9000;
+    }
+    .back-to-top.visible { opacity: 1; pointer-events: auto; }
+  </style>
+</head>
+<body data-page="index">
+<div id="site-header"></div>
+<div id="page-wrapper">
+  <div class="page-hero">
+    <div class="container">
+      <h1>Sponsorship</h1>
+      <nav class="breadcrumb-nav"><a href="index.html">Home</a> › Sponsorship</nav>
+    </div>
+  </div>
+  <main id="main-content">
+    <section>
+      <div class="container">
+        <h2 class="section-title fade-in">Sponsorship Opportunities</h2>
+        <div class="cfp-card fade-in" style="margin-top: 24px; text-align: center; padding: 40px;">
+          <div style="font-size: 48px; color: var(--primary);">
+            <i class="fa fa-handshake-o"></i>
+          </div>
+          <h3 style="margin-top: 16px;">Partner with ICDDS 2026</h3>
+          <p style="margin-top: 12px;">
+            We invite organizations to join as sponsors for ICDDS 2026. Sponsoring provides
+            excellent exposure to researchers, practitioners, and industry leaders in data science and AI.
+          </p>
+          <p>
+            For sponsorship inquiries contact:
+            <a href="mailto:icdds.ieeecs@gmail.com">icdds.ieeecs@gmail.com</a>
+          </p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<a href="#" class="back-to-top" id="backToTop"><i class="fa fa-chevron-up"></i></a>
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script>
+  window.addEventListener('scroll', function () {
+    var b = document.getElementById('backToTop');
+    if (b) b.classList.toggle('visible', window.scrollY > 300);
+  });
+</script>
+</body>
+</html>

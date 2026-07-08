@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Venue – ICDDS 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="img/favicon.ico" rel="icon">
+  <link href="css/style-aiml.css" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    .back-to-top { position:fixed; right:24px; bottom:24px; width:40px; height:40px; background:var(--primary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; box-shadow:var(--shadow-md); opacity:0; pointer-events:none; transition:opacity .3s; z-index:9000; }
+    .back-to-top.visible { opacity:1; pointer-events:auto; }
+    .venue-layout { display:grid; gap:24px; margin-top:30px; }
+    .venue-content { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:stretch; }
+    @media (max-width:768px) { .venue-content { grid-template-columns:1fr; } }
+    .venue-img { width:100%; height:320px; object-fit:cover; border-radius:8px; box-shadow:var(--shadow-md); display:block; }
+    .venue-copy { background:var(--white); border:1px solid var(--border); border-radius:8px; padding:28px; box-shadow:var(--shadow-sm); }
+    .venue-copy h3 a { color:var(--dark); } .venue-copy h3 a:hover { color:var(--primary); }
+    .venue-map { border-radius:8px; overflow:hidden; box-shadow:var(--shadow-sm); }
+    .venue-map iframe { display:block; width:100%; height:420px; border:0; }
+  </style>
+</head>
+<body data-page="venue">
+<div id="site-header"></div>
+<div id="page-wrapper">
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Conference Venue</h1>
+      <nav class="breadcrumb-nav"><a href="index.html">Home</a> › Venue</nav>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section>
+      <div class="container">
+        <h2 class="section-title fade-in">CHRIST University, Yeshwanthpur Campus</h2>
+        <div class="venue-layout">
+          <div class="venue-content">
+            <div class="fade-left">
+              <img src="img/christ_campus_2.jpeg" alt="CHRIST University Yeshwanthpur Campus" class="venue-img">
+            </div>
+            <div class="venue-copy fade-right">
+              <h3><a href="https://byc.christuniversity.in/" target="_blank">CHRIST (Deemed to be University), Yeshwanthpur Campus</a></h3>
+              <p style="color:var(--body-text); font-size:13px; margin-bottom:16px;">Nagasandra Post, Bangalore – 560073</p>
+              <p>Established in 1969, CHRIST (Deemed to be University) stands as one of India's premier institutions, globally recognized for academic excellence and holistic development.</p>
+              <p>The Yeshwanthpur campus features state-of-the-art infrastructure and ultra-modern facilities tailored specifically for high-level academic conferences and research initiatives.</p>
+              <p>Strategically located in North Bengaluru with exceptional transport connectivity, the campus provides an inspiring, world-class environment. It serves as an ideal hub for industry-academia collaboration, fostering impactful innovation, global networking, and cross-disciplinary knowledge exchange.</p>
+              <a href="https://byc.christuniversity.in/" target="_blank" class="btn btn-primary" style="margin-top:8px;">Visit University Website</a>
+            </div>
+          </div>
+          <div class="venue-map fade-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.675726633379!2d77.60422297507665!3d12.9334016871479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1484b43e1e6f%3A0x1e8ee5f0819bc3d4!2sChrist%20University!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Conference venue map"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<a href="#" class="back-to-top" id="backToTop"><i class="fa fa-chevron-up"></i></a>
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script>window.addEventListener('scroll',function(){var b=document.getElementById('backToTop');if(b)b.classList.toggle('visible',window.scrollY>300);});</script>
+</body>
+</html>
