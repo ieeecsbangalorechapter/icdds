@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ICDDS </title>
+    
+    <meta name="keywords" content="International Conference on Data Decision and Systems, ICDDS 2022, ieeecsbc, IEEE COMPUTER SOCIETY BANGALORE CHAPTER, " >
+    <meta content="Rapid advances and growth in connected world across different application domains are fast pacing the data volumes generated from range of devices. Such high growth is further endorsed by digital transformation, adoption of advanced Internet of Things (IoT) solutions, cyber physical systems, and Smart Things. Data being the centre of innovative systems, its overall realization in solution building depends on several aspects such as the quality of data; data management; computation; knowledge discovery; decision support, etc.
+    ICDDS’22 aims to look broadly at data based innovation and technologies in interdisciplinary areas. The conference considers all aspects of data and decision science, applications, solution design and system challenges in all such new paradigms ranging from theory to applied research." name="description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/animate/animate.min.css" rel="stylesheet">
+    <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        (function ($) { // Begin jQuery
+            $(function () { // DOM ready
+                // If a link has a dropdown, add sub menu toggle.
+                $('nav ul li a:not(:only-child)').click(function (e) {
+                    $(this).siblings('.nav-dropdown').toggle();
+                    // Close one dropdown when selecting another
+                    $('.nav-dropdown').not($(this).siblings()).hide();
+                    e.stopPropagation();
+                });
+                // Clicking away from dropdown will remove the dropdown class
+                $('html').click(function () {
+                    $('.nav-dropdown').hide();
+                });
+                // Toggle open and close nav styles on click
+                $('#nav-toggle').click(function () {
+                    $('nav ul').slideToggle();
+                });
+                // Hamburger to X toggle
+                $('#nav-toggle').on('click', function () {
+                    this.classList.toggle('active');
+                });
+            }); // end DOM ready
+        })(jQuery); // end jQuery
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Header Start -->
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <!-- Uncomment below if you prefer to use text logo -->
+                <h2><a href="index.html" class="scrollto">ICDDS</a></h2>
+                <!-- <a href="/">ICDDS <img src="img/logo.png" alt="Logo" /></a> -->
+            </div>
+            
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <!-- <li class="menu-active"><a href="index.html">Home</a></li> -->
+                    <!-- <li><a href="about.html">About</a></li> -->
+                    <li><a href="#">Committee</a>
+
+                        <ul class="nav-dropdown">
+                            <li><a href="Technical-Committee.html" target="_blank" rel="noopener noreferrer">Technical Program Committee</a></li>
+                            <li><a href="Organizing-Committee.html">Organizing Committee</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="#">Call for Papers</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="Foundational-Research.html">Foundational Research</a></li>
+                            <li><a href="Systems-Research.html">Systems Research</a>
+                            </li>
+                            <li><a href="Applications.html">Applications</a></li>
+                            <li><a href="AuthorGuide.html">Author's Guidelines</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Program-Schedule.html">Program Schedule</a></li>
+
+
+                    <li><a href="#">Workshops</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="smartcity.html">Smart City Stack workshop</a></li>
+                            <li><a href="girlgeekhack.html">GirlGeekHack'23 (Mangalore Subsection Edition)</a></li>
+                            <li><a href="studentcongress.html">CS Student Congress</a></li>
+                        </ul></li>
+
+
+                    <li><a href="speakers.html">Speakers</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                    <!-- <li><a href="ticket.html">Tickets</a></li> -->
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                        <li><a href="#">Archives</a>
+
+                            <ul class="nav-dropdown">
+                                <li><a href="2022.html">2022</a></li>
+                            </ul>
+                            </li>
+                    <li><a href="registration.html">Registration</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header>
+    <!-- #header end -->
+
+    <!-- Banner Section Start-->
+    <section class="banner" style="height: 700px;">
+        <!-- <marquee class="notification">Deadline for Paper Submission has been Extended.</marquee> -->
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-12" style="padding: 0;">
+                        <h1 class="banner1-header1">
+                            <img src="img/logo.png" class="logo" width="200px">
+                            <img src="img/IEEE-CS-BangaloreChapterOrange.png" background="white" width="200px"><br><br>
+                            International Conference on Data, Decision and Systems
+                        </h1>
+                        <h2 style="text-align: center; color: #ddd;">December 2-3, 2022</h2>
+                        <h3 style="text-align: center; color: #ddd;">Hybrid Conference | Bengaluru, India</h3>
+                    </div>
+                    <!-- <div class="col-md-6">
+                            <p class="banner-nav">
+                                <span class="banner-box">
+                                    <a href="/">Home</a>
+                                    <a href="Program-Committee.html">Organizing Committee</a>
+                                </span>
+                            </p>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Banner Section end -->
+
+
+
+
+    <!-- About Section Start-->
+    <section id="about">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 about-des">
+                    
+                    <div class="row">
+                        
+                        <div class="col-md-10">
+                            <section id="indexspeaker">
+                                <div class="container">
+                                    <header class="section-header">
+                                        <h3>ICDDS 2022 Keynote Speakers</h3>
+                                    </header>
+                                    <div class="image-holder">
+                                        <!-- <div>
+                                            <img src="img/Mikhail.png" width="250px" height="250px">
+                                            <p class="commitee-names">Mikhail Belkin</p>
+                                            <p class="position">University of California, San Diego</p>
+                                        </div>
+                                        <div>
+                                            <img src="img/sandeepj.jpg" width="250px" height="250px">
+                                            <p class="commitee-names">Sandeep Juneja</p>
+                                            <p class="position">Tata Institute of Fundamental Research, India</p>
+                                        </div>
+                                        <div>
+                                            <img src="img/Vasant.jpg" width="250px" height="250px">
+                                            <p class="commitee-names">Vasant Gajanan Honavar</p>
+                                            <p class="position">Penn State Neuroscience Institute </p>
+                                        </div> -->
+                                        <div class="card">
+                                            <img src="img/Mikhail.png" alt="Avatar" style="width:100%; height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                              <h4><b>Mikhail Belkin</b></h4> 
+                                              <br>
+                                              <h5>University of California,<br> San Diego </h5>
+                                            </center>
+                                            </div>
+                                          </div>
+                                          <div class="card">
+                                            <img src="img/sandeepj.jpg" alt="Avatar" style="width:100%;height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                              <h4><b>Sandeep Juneja</b></h4> <br>
+                                              <h5>Tata Institute of Fundamental Research,<br> India</h5> 
+                                            </center>
+                                            </div>
+                                          </div>
+                                          <div class="card">
+                                            <img src="img/Vasant.jpg" alt="Avatar" style="width:100%;height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                              <h4><b>Vasant Gajanan Honavar</b></h4> 
+                                              <h5>Penn State Neuroscience Institute </h5> 
+                                            </center>
+                                            </div>
+                                          </div>
+                                        <div class="card">
+                                            <img src="https://homepage.tudelft.nl/w5p50/vp.jpg" alt="Avatar" style="width:100%; height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                                    <h4><b>R. Venkatesha Prasad</b></h4>
+                                                    <br>
+                                                    <h5>TU Delft</h5>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                
+                            </section>
+                            
+                            <br>
+                            <section id="indexspeaker">
+                                <div class="container">
+                                    <header class="section-header">
+                                        <h3>ICDDS 2022 Plenary Speakers</h3>
+                                    </header>
+                                    <div class="image-holder">
+                                        <!-- <div>
+                                            <img src="img/Abhyuday.jpg" width="250px" height="250px">
+                                            <p class="commitee-names">Abhyuday Mandal</p>
+                                            <p class="position">University of Georgia, USA</p>
+                                        </div>
+                                        <div>
+                                            <img src="img/Praneeth.png" width="250px" height="250px">
+                                            <p class="commitee-names">Praneeth Netrapalli</p>
+                                            <p class="position">Google Research</p>
+                                        </div>
+                                        <div>
+                                            <img src="img/Abir.png" width="250px" height="250px">
+                                            <p class="commitee-names">Abir De</p>
+                                            <p class="position">IIT Bombay</p>
+                                        </div>   -->
+                                        
+                                        <div class="card">
+                                            <img src="img/Abhyuday.jpg" alt="Avatar" style="width:100%; height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                              <h4><b>Abhyuday Mandal</b></h4> 
+                                              <br>
+                                              <h5>University of Georgia,<br> USA </h5>
+                                            </center>
+                                            </div>
+                                          </div>
+                                          <div class="card">
+                                            <img src="img/Praneeth.png" alt="Avatar" style="width:100%;height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                              <h4><b>Praneeth Netrapalli</b></h4> <br>
+                                              <h5>Google Research</h5> 
+                                            </center>
+                                            </div>
+                                          </div>
+                                          <div class="card">
+                                            <img src="img/Abir.png" alt="Avatar" style="width:100%;height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                              <h4><b>Abir De</b></h4> <br><br>
+                                              <h5>IIT Bombay,<br>India</h5> 
+                                            </center>
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="card">
+                                            <img src="img/Prathosh.jpg" alt="Avatar" style="width:100%;height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                              <h4><b>Prathosh AP</b></h4> <br><br>
+                                              <h5>Indian Institute of Science (IISc)<br>India</h5> 
+                                            </center>
+                                            </div>
+                                          </div>
+                                        <div class="card">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C5603AQE1rl8-5LMXoQ/profile-displayphoto-shrink_200_200/0/1622721881793?e=1674086400&v=beta&t=GshZcRcmrjhQeBu4rokHuTsW5DYz1-Hd4kVVFdSXPIY"
+                                                alt="Avatar" style="width:100%; height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                                    <h4><b>Yashovardhan Chati
+                                                        </b></h4>
+                                                    <br>
+                                                    <h5>TCS Research</h5>
+                                                </center>
+                                            </div>
+                                        </div>
+                                          <div class="card">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFerxjElS2iyQ/profile-displayphoto-shrink_200_200/0/1657544227137?e=1674691200&v=beta&t=H8Gi72W5jEtnEnNt1aLGlKSLs_QmeQuJqNmw_J9jG8A" alt="Avatar" style="width:100%;height:300px;">
+                                            <div class="containerhome">
+                                                <center>
+                                              <h4><b>Shyam Sundar Policetti
+                                                            </b></h4> <br><br>
+                                              <h5>KreativEnerzi,<br>India</h5> 
+                                            </center>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br>
+                            <div class="about-des-col">
+                                <div class="about-img">
+                                </div>
+                                <p>
+                                    Rapid advances and growth in connected world across different application domains
+                                    are fast pacing the data volumes generated from range of devices. Such high growth
+                                    is further endorsed by digital transformation, adoption of advanced Internet of
+                                    Things (IoT) solutions, cyber physical systems, and Smart Things. Data being the
+                                    centre of innovative systems, its overall realization in solution building depends
+                                    on several aspects such as the quality of data; data management; computation;
+                                    knowledge discovery; decision support, etc.
+                                </p>
+                                <p>ICDDS’22 aims to look broadly at data based innovation and technologies in
+                                    interdisciplinary areas. The conference considers all aspects of data and decision
+                                    science, applications, solution design and system challenges in all such new
+                                    paradigms ranging from theory to applied research.</p>
+                            </div>
+                            <!-- Call For Papers Section Start -->
+                            <section id="speaker">
+                                <div class="container">
+                                    <header class="section-header">
+                                        <h3>Call For Papers</h3>
+                                    </header>
+                                    <div class="row">
+
+                                        <div class="col-md-12 content-cols content-cols-right">
+                                            <div class="content-col">
+                                                <p>
+                                                    ICDDS’22, a flagship conference of IEEE Computer Society Bangalore
+                                                    Chapter, invites researchers, engineers, and subject matter experts
+                                                    from academia, industry, and start-ups to present their latest
+                                                    innovations in Data/Decision Systems (DDS) and their applications
+                                                </p>
+                                                <p>ICDDS has three tracks : <br>(i) Foundational Research <br>(ii)
+                                                    Systems Research <br>(iii) Applications. <br>Authors are
+                                                    encouraged to submit their original work(s) to any of these tracks.
+                                                </p>
+                                                <p>Track-I Foundational Research aims to receive submissions from
+                                                    theory to novel findings and current practices in all aspects of
+                                                    Data/Decision science</p>
+                                                <p>Track-II Systems Research is focused on research addressing
+                                                    the system aspects data/decision science.</p>
+                                                <p>Track-III Applications aims to attract submissions related
+                                                    to real-world problems and their solution approach using
+                                                    data/decision science.</p>
+                                                <p>
+                                                    All accepted and presented papers will be published as conference
+                                                    proceeding and will be included in IEEE Computer Society Digital
+                                                    Library.
+                                                </p>
+                                                <center>
+                                                    <a href="Foundational-Research.html">Foundational Research</a>
+                                                    <br>
+                                                    <a href="Systems-Research.html">Systems Research</a><br>
+                                                    <a href="Applications.html">Applications </a>    
+                                                </center>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+
+
+                            </section>
+                            <!-- Call For Papers Section End -->
+
+
+
+                        </div>
+                        <div class="col-md-2">
+                            <center><h2 style="font-size: x-large;">Sponsors</h2>
+                            <img class="partners" src="img/dozee.png" alt="DOZEE LOGO" />
+                            <br><br>
+                            <img class="partners" src="img/boeing.png" alt="Boeing LOGO" width="100%" height="150px"/>
+                            <img class="" src="img/continental.jpeg" width="170px;" alt="continental LOGO" />
+                            <img class="" src="img/Bosch_symbol_logo_black_red.svg" width="170px;" alt="Bosch LOGO" />
+                            <br><br><br>
+                            <h2 style="font-size: large;">Academic Partners</h2>
+                            <img class="partners" src="img/APPCAIR LOGO.jpg" alt="APPCAIR LOGO"/>
+                            <img class="partners" src="img/BITS PILANI GOA LOGO.jpg"  alt="BITS PILANI GOA LOGO"/>
+                            <img class="" src="img/BMS LOGO.jpg" width="170px;" height="150px" alt="BMSCE LOGO" />
+                            <img class="" src="img/RV LOGO.jpg" width="170px;" height="150px" alt="RVCE LOGO" />
+                            <img class="" src="img/VVCE LOGO.jpg" width="170px;" height="150px" alt="VVCE LOGO" />
+                            <img class="" src="img/MAHE-logo-high-res.jpg" width="170px;" alt="MAHE LOGO" />
+                            
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end -->
+
+
+
+    <!-- Venue Section Start -->
+    <section id="venue">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-col">
+                        <img class="img-fluid-venue" src="img/BMS COLLEGE OF ENGINEERING 1.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6 des-cols">
+                    <div class="des-col">
+                        <h2>Conference Venue</h2>
+                        <h3>B.M.S. College of Engineering</h3>
+                        <h4>Bull Temple Rd, Basavanagudi, Bengaluru, Karnataka 560019</h4>
+                        <p>
+                            B.M.S. College of Engineering is a private engineering college in Basavanagudi, Bangalore,
+                            India. It was started in 1946 by Bhusanayana Mukundadas Sreenivasaiah and is run by the
+                            B.M.S. Educational Trust. It is affiliated with Visvesvaraya Technological University and
+                            became autonomous in 2008.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Venue Section End -->
+
+
+
+    <!-- Contact Section Start -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="row">
+
+                <div class="col-md-2"></div>
+                <div class="col-md-8 form">
+                    <form action="https://formspree.io/f/meqnzvwn" method="post" role="form" class="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input name="name" type="text" class="form-control" placeholder="Your Name" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input name="email" type="email" class="form-control" placeholder="Your Email"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input name="subject" type="text" class="form-control" placeholder="Subject" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="6" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer Starts-->
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-links">
+                            <a href="https://twitter.com/ieeecsbs" class="twitter" target="_blank"><i
+                                    class="fa fa-twitter"></i></a>
+                            <a href="https://facebook.com/ieeecsbsc" class="facebook" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://instagram.com/ieeecsbs" class="instagram" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
+                            <!-- <a href="#" class="google-plus"><i class="fa fa-youtube"></i></a> -->
+                            <a href="https://www.linkedin.com/in/ieeecsbs/" class="linkedin" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; 2022 <a href="https://www.icdds.org">ICDDS</a>. All Rights Reserved.<br>
+                Organized By <a href="https://www.cs.ieeebangalore.org/">IEEE Computer Society Banglore Chapter</a>
+            </div>
+        </div>
+    </footer>
+    <!-- #footer end -->
+    <!-- Footer Ends-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below if you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery-migrate.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/easing/easing.min.js"></script>
+    <script src="vendor/superfish/hoverIntent.js"></script>
+    <script src="vendor/superfish/superfish.min.js"></script>
+    <script src="vendor/waypoints/waypoints.min.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+    <!-- Main Javascript File -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

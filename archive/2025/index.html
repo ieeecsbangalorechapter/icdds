@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ICDDS </title>
+
+    <meta name="keywords"
+        content="International Conference on Data Decision and Systems, ICDDS 2024, ieeecsbc, IEEE COMPUTER SOCIETY BANGALORE CHAPTER, ">
+    <meta
+        content="Rapid advances and growth in connected world across different application domains are fast pacing the data volumes generated from range of devices. Such high growth is further endorsed by digital transformation, adoption of advanced Internet of Things (IoT) solutions, cyber physical systems, and Smart Things. Data being the centre of innovative systems, its overall realization in solution building depends on several aspects such as the quality of data; data management; computation; knowledge discovery; decision support, etc.
+    ICDDS’24 aims to look broadly at data based innovation and technologies in interdisciplinary areas. The conference considers all aspects of data and decision science, applications, solution design and system challenges in all such new paradigms ranging from theory to applied research."
+        name="description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/animate/animate.min.css" rel="stylesheet">
+    <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .rounded-link:hover {
+            border-color: #d2691e;
+            color: #000000;
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        (function ($) { // Begin jQuery
+            $(function () { // DOM ready
+                // If a link has a dropdown, add sub menu toggle.
+                $('nav ul li a:not(:only-child)').click(function (e) {
+                    $(this).siblings('.nav-dropdown').toggle();
+                    // Close one dropdown when selecting another
+                    $('.nav-dropdown').not($(this).siblings()).hide();
+                    e.stopPropagation();
+                });
+                // Clicking away from dropdown will remove the dropdown class
+                $('html').click(function () {
+                    $('.nav-dropdown').hide();
+                });
+                // Toggle open and close nav styles on click
+                $('#nav-toggle').click(function () {
+                    $('nav ul').slideToggle();
+                });
+                // Hamburger to X toggle
+                $('#nav-toggle').on('click', function () {
+                    this.classList.toggle('active');
+                });
+            }); // end DOM ready
+        })(jQuery); // end jQuery
+    </script>
+
+
+
+    <!-- Header Start -->
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <!-- Uncomment below if you prefer to use text logo -->
+                <h2><a href="index.html" class="scrollto">ICDDS</a></h2>
+                <!-- <a href="/">ICDDS <img src="img/logo.png" alt="Logo" /></a> -->
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="index.html">Home</a></li>
+                    <!-- <li><a href="about.html">About</a></li> -->
+                    <li><a href="#">Committee</a>
+
+                        <ul class="nav-dropdown">
+                            <li><a href="Organizing-Committee.html">Organizing Committee</a></li>
+                            <li><a href="Technical-Committee.html" target="_blank" rel="noopener noreferrer">Technical
+                                    Program Committee</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="CallForPapers.html">Call for Papers</a>
+                    <li><a href="CallForPosters.html">Call for Posters</a></li>
+                    <!-- <ul class="nav-dropdown">
+                            <li><a href="Foundational-Research.html">Topics of Interest</a></li>
+                            <li><a href="Systems-Research.html">Systems Research</a>
+                            </li>
+                            <li><a href="Applications.html">Applications</a></li>
+                            <li><a href="AuthorGuide.html">Author's Guidelines</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a href="Sponsorship.html">Sponsorship</a></li>
+                    <!-- <li><a href="Program-Schedule.html">Program Schedule</a></li> -->
+
+
+                    <!-- <li><a href="#">Workshops</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="smartcity.html">Smart City Stack workshop</a></li>
+                            <li><a href="girlgeekhack.html">GirlGeekHack'23 (Mangalore Subsection Edition)</a></li>
+                            <li><a href="studentcongress.html">CS Student Congress</a></li>
+                        </ul></li> -->
+
+
+                    <li><a href="speakers.html">Speakers</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                    <!-- <li><a href="ticket.html">Tickets</a></li> -->
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <!-- <li><a href="#">Archives</a>
+
+                            <ul class="nav-dropdown">
+                                <li><a href="2022.html">2022</a></li>
+                            </ul>
+                            </li> -->
+                    <li><a href="registration.html">Registration</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header>
+    <!-- #header end -->
+
+    <!-- Banner Section Start-->
+    <section class="banner">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-12 col-sm-12" style="padding: 0;">
+                    <h1 class="banner1-header1">
+                        <img src="img/logo.png" class="img-fluid"
+                            style="width: 150px; height: auto; object-fit: contain; margin: 0 10px;">
+                        <img src="img/IIIT_Dharwad.png" class="img-fluid"
+                            style="width: 120px; height: 3em; object-fit: contain; margin: 0 10px;">
+                        <img src="img/ieee-nkss.png" class="img-fluid"
+                            style="width: 140px; height: auto; object-fit: contain; margin: 0 10px;">
+                        <img src="img/IEEE-CS-BangaloreChapterOrange.png" class="img-fluid"
+                            style="width: 150px; height: auto; object-fit: contain; margin: 0 10px;">
+                        <img src="img/Bangalore-Section-Logo-white.png" class="img-fluid"
+                            style="height: 60px; width: 20%; object-fit: contain; margin: 0 10px;">
+                        <img src="img/ANRF Logo.jpeg" class="img-fluid"
+                            style="height: 60px; width: 20%; object-fit: contain; margin: 0 10px;">
+                        <br><br>
+                        2025 4th International Conference on Data, Decision and Systems
+                    </h1>
+                    <h2 style="text-align: center; color: #ddd;">December 4 - 6, 2025</h2>
+                    <h3 class="conference-info" style="text-align: center; color: #ddd;">In-person Conference | Indian
+                        Institute of Information Technology, Dharwad, India</h3> <br>
+                        <h4 class="conference-info" style="text-align: center; color: #ddd;">Sponsor: Anusandhan National Research Foundation (ANRF)</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Banner Section end -->
+
+
+    <!-- About Section Start-->
+    <section id="about">
+        <div class="container1">
+            <div class="card" id="card" style="width: 40rem;">
+
+                <!-- Main Heading -->
+                <p class="add-info">
+                    <strong><span class='imp' style="font-size: 35px;">Important Dates</span></strong>
+                </p>
+
+                <!-- Main Conference -->
+                <p class="add-info" style="font-size: 24px; margin-top: 10px;">
+                    <strong>Main Conference</strong>
+                </p>
+                <p class="para">
+                    <s><strong>Full Paper Submission Deadline: </strong>July 31, 2025 (Hard Deadline)<br></s>
+                    <strong>Notification of Acceptance: </strong>September 30, 2025<br>
+                    <strong>Camera Ready Submission: </strong>October 20, 2025<br>
+                    <strong>Final Registration: </strong> November 1, 2025<br>
+                    <strong>Conference Dates: </strong>December 4-6, 2025<br>
+                    <strong>Venue: </strong> Indian Institute of Information Technology, Dharwad
+                </p>
+
+                <!-- Call for Posters -->
+                <p class="add-info" style="font-size: 24px; margin-top: 15px;">
+                    <strong>Call for Posters</strong>
+                </p>
+                <p class="para">
+                    <strong>Poster Submission Starts: </strong>August 15, 2025<br>
+                    <strong>Poster Submission Deadline: </strong>October 7, 2025<br>
+                    <strong>Notification of Acceptance: </strong>November 7, 2025<br>
+                    <strong>Camera-ready Submission: </strong>November 15, 2025
+                </p>
+                <!-- <p class="add-info"><strong><span class='imp' style="font-size: 3pze
+                    5px;">Announcements </span></strong> -->
+                <!-- <p class="para">
+                    <strong>Author Notifications Sent:</strong><br>
+                    All paper submission decisions have been communicated to the authors. <a href="accepted-papers.html" id="author-instructions">Click here</a> to check the accepted papers of the conference.
+                  </p> 
+                <p class="para">
+                    <a href="https://docs.google.com/document/d/1jR0BXeYd12T0WyUSp_Gni5rZeHB3PamrbYfQ_08umi8/edit" id="author-instructions" target="_blank">Click Here</a>
+                    to know more about the Author Guidelines.
+                  </p> -->
+                  <br> 
+                  <button class="accept-btn"><a href="https://in.explara.com/e/icdds-2025" target="_blank">Register for ICDDS 2025 Now!</a></button> <br>
+                  <p>
+                    <a href="https://docs.google.com/document/d/1BZhPfdPuK7t1PC4d61wiKlwKSdUaF9DF/edit?usp=sharing&ouid=104186775709815957931&rtpof=true&sd=true" 
+                        target="_blank"
+                        style="display:inline-block; padding:10px 20px; border:2px solid #000000; border-radius:25px; text-decoration:none; background:#f8f9fa; color:#d2691e; transition:all 0.3s ease; font-family:sans-serif;"
+                        class="rounded-link">
+                        Author Instructions for eCopyright, Camera Ready Submission and Registration
+                    </a>
+                  </p> <br>
+                  <p> 
+                    <a href="https://docs.google.com/document/d/1XKHCM7yz3HW0vUy3aeQUPlq7motxJU8H5OQhiPxC4n0/edit?usp=sharing" 
+                        target="_blank"
+                        style="display:inline-block; padding:10px 20px; border:2px solid #000000; border-radius:25px; text-decoration:none; background:#f8f9fa; color:#d2691e; transition:all 0.3s ease; font-family:sans-serif;"
+                        class="rounded-link">
+                        Accomodation Details
+                    </a>
+                  </p>
+                  <br>
+                <p><a class='schedule-button' href="https://docs.google.com/document/d/13kYfOoG-N6jrbl-6Ska5iISbCp4onwEO/edit" target="_blank" style="width: 100%; border-radius: 8px;">Conference Schedule</a></p>
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 about-des">
+
+                    <div class="row">
+
+                        <div class="col-md-10">
+
+                            <br>
+
+                            <!-- <div>
+                                            <img src="img/Abhyuday.jpg" width="250px" height="250px">
+                                            <p class="commitee-names">Abhyuday Mandal</p>
+                                            <p class="position">University of Georgia, USA</p>
+                                        </div>
+                                        <div>
+                                            <img src="img/Praneeth.png" width="250px" height="250px">
+                                            <p class="commitee-names">Praneeth Netrapalli</p>
+                                            <p class="position">Google Research</p>
+                                        </div>
+                                        <div>
+                                            <img src="img/Abir.png" width="250px" height="250px">
+                                            <p class="commitee-names">Abir De</p>
+                                            <p class="position">IIT Bombay</p>
+                                        </div>   -->
+
+
+
+                            <br>
+                            <div class="about-des-col">
+
+                                <div class="about-img">
+
+                                </div>
+                                <p style="text-align: justify;">
+                                    Rapid advances and growth in the connected world across different application
+                                    domains are fast
+                                    pacing the data volumes generated from a range of devices. Such high growth is
+                                    further endorsed
+                                    by digital transformation, and systematic adoption of advanced Internet of Things
+                                    (IoT), Cyber
+                                    Physical Systems, and Smart Things. Data being the centre of innovative systems, its
+                                    overall
+                                    realization in solution building depends on several aspects such as the quality of
+                                    data; data
+                                    management; computation; knowledge discovery; decision support, etc.
+                                </p>
+                                <p tyle="text-align: justify;">ICDDS'25 aims
+                                    to look
+                                    broadly at data based innovation and technologies in interdisciplinary areas. The
+                                    conference is
+                                    particularly interested in all aspects of data and decision science, applications,
+                                    solution design,
+                                    and system challenges in all such new paradigms ranging from theory to applied
+                                    research.</p>
+                            </div>
+                            <!-- Call For Papers Section Start -->
+                            <section id="speaker">
+                                <div class="container">
+                                    <header class="section-header">
+                                        <h3>Call For Papers</h3>
+                                    </header>
+                                    <div class="row">
+
+                                        <div class="col-md-12 content-cols content-cols-right">
+                                            <div class="content-col">
+                                                <p style="font-size: 20px !important;">
+                                                    ICDDS’25, a flagship conference of IEEE Computer Society Bangalore
+                                                    Chapter, invites researchers, engineers, and subject matter experts
+                                                    from academia, industry, and start-ups to present their latest
+                                                    innovations in Data/Decision Systems (DDS) and their applications
+                                                </p>
+                                                <p style="font-size: 20px !important;">ICDDS has three tracks : <br>(i)
+                                                    Foundational Research <br>(ii)
+                                                    Systems Research <br>(iii) Applications. <br>Authors are
+                                                    encouraged to submit their original work(s) to any of these tracks.
+                                                </p>
+                                                <p style="font-size: 20px !important;">Click below to know more about:
+                                                </p> <br>
+                                                <a href="Foundational-Research.html" style="margin: 1% 24%;">Topics of
+                                                    Interests for Research</a>
+                                                <a href="AuthorGuide.html" style="margin: 1% 24%;">Author Guidelines</a>
+                                                <!-- <p>Track-I Foundational Research aims to receive submissions from
+                                                    theory to novel findings and current practices in all aspects of
+                                                    Data/Decision science</p>
+                                                <p>Track-II Systems Research is focused on research addressing
+                                                    the system aspects data/decision science.</p>
+                                                <p>Track-III Applications aims to attract submissions related
+                                                    to real-world problems and their solution approach using
+                                                    data/decision science.</p>
+                                                <p>
+                                                    Accepted papers will be submitted for inclusion into IEEE Xplore
+                                                    subject to meeting IEEE Xplore’s scope and quality requirements.
+                                                </p>
+                                                <center>
+                                                    <a href="Foundational-Research.html">Foundational Research</a>
+                                                    <br>
+                                                    <a href="Systems-Research.html">Systems Research</a><br>
+                                                    <a href="Applications.html">Applications </a>
+                                                    <p class="para">
+                                                        <strong>Important Dates : </strong><br>
+                                                        <strong>Paper Submission Starts:</strong>May 15, 2024<br>
+                                                        <strong>Full Paper Submission Deadline:</strong>June 30, 2024<br>
+                                                        <strong>Notification of Acceptance:</strong>September 30, 2024<br>
+                                                        <strong>Camera Ready Submission:</strong>October 20, 2024<br>
+                                                        <strong>Registration Due:</strong> November 1, 2024<br>
+                                                        <strong>Conference Dates:</strong>December 5-7, 2024<br>
+                                                        <strong>Venue :</strong> PES University, Bengaluru
+                                                      </p>
+                                                </center> -->
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+
+
+                            </section>
+                            <!-- Call For Papers Section End -->
+
+
+
+                        </div>
+                        <!-- <div class="col-md-2">
+                            <h2>Sponsors    </h2>
+                            <img class="partners" src="img/boeing.png" alt="Boeing LOGO" width="100%" height="150px"/>
+                            <img src="img/Bosch_symbol_logo_black_red.svg" alt=""  width = "100%" height = "150px" class="partners">
+                            <img src="img/ericsson.png" alt="" width="100%" height="150px">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end -->
+
+
+
+    <!-- Venue Section Start -->
+    <section id="venue">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-col">
+                        <img class="img-fluid-venue" src="img/IIIT_Dharwad.jpg" alt="IIT Dharwad Campus">
+                    </div>
+                </div>
+                <div class="col-md-6 des-cols">
+                    <div class="des-col">
+                        <h2>Conference Venue</h2>
+                        <h3>Indian Institute of Information Technology, Dharwad</h3>
+                        <h4>Ittigatti Road, Near Sattur Colony, Dharwad - 580009</h4>
+                        <p>
+                            IIIT Dharwad, established in 2015 under a Public-Private-Partnership (PPP) between the
+                            Ministry of Education, Government of Karnataka, and Keonics, is an Institute of National
+                            Importance aimed at bridging the skill gap in high-end IT sectors. It offers BTech programs
+                            in Computer Science and Engineering, Electronics and Communication Engineering, and Data
+                            Science and AI, focusing on solving socially relevant problems in India. The institute’s
+                            semi-modern theme is reflected in its campus design and logo, symbolizing its vision to
+                            address emerging challenges in IT, robotics, data sciences, and cyber-physical systems.
+                            Strategically located in Hubballi-Dharwad, it is a growing educational hub. Also with
+                            proximity to Bengaluru, IIIT Dharwad is poised to make a significant impact on the Indian IT
+                            industry, academia, and the local community.
+                        </p>
+
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Venue Section End -->
+
+
+
+    <!-- Contact Section Start -->
+    <section id="contact">
+        <div class="container">
+            <!-- <div class="section-header">
+                <h3>Contact Us</h3>
+            </div>
+            <p style="text-align: center;">For any query write an email to <a href="#">icdds2023@gmail.com</a></p>
+            <div class="row"> -->
+
+
+            <!--<div class="col-md-8 form">
+                    <form action="https://formspree.io/f/meqnzvwn" method="post" role="form" class="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input name="name" type="text" class="form-control" placeholder="Your Name" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input name="email" type="email" class="form-control" placeholder="Your Email"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input name="subject" type="text" class="form-control" placeholder="Subject" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="6" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer Starts-->
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-links">
+                            <a href="https://twitter.com/ieeecsbs" class="twitter" target="_blank"><i
+                                    class="fa fa-twitter"></i></a>
+                            <a href="https://facebook.com/ieeecsbsc" class="facebook" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://instagram.com/ieeecsbc" class="instagram" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
+                            <!-- <a href="#" class="google-plus"><i class="fa fa-youtube"></i></a> -->
+                            <a href="https://www.linkedin.com/in/ieeecsbs/" class="linkedin" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 <a href="https://www.icdds.org">ICDDS</a>. All Rights Reserved.<br>
+                Organized By <a href="https://ieeecsbangalore.org/">IEEE Computer Society Banglore Chapter</a>
+            </div>
+        </div>
+    </footer>
+    <!-- #footer end -->
+    <!-- Footer Ends-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below if you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery-migrate.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/easing/easing.min.js"></script>
+    <script src="vendor/superfish/hoverIntent.js"></script>
+    <script src="vendor/superfish/superfish.min.js"></script>
+    <script src="vendor/waypoints/waypoints.min.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+    <!-- Main Javascript File -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

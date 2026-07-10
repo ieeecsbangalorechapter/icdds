@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Technical Program Committee | ICDDS</title>
+  <meta name="keywords"
+    content="International Conference on Data Decision and Systems, ICDDS 2024, ieeecsbc, IEEE COMPUTER SOCIETY BANGALORE CHAPTER, " />
+  <meta
+    content="Rapid advances and growth in connected world across different application domains are fast pacing the data volumes generated from range of devices. Such high growth is further endorsed by digital transformation, adoption of advanced Internet of Things (IoT) solutions, cyber physical systems, and Smart Things. Data being the centre of innovative systems, its overall realization in solution building depends on several aspects such as the quality of data; data management; computation; knowledge discovery; decision support, etc.
+    ICDDS’23 aims to look broadly at data based innovation and technologies in interdisciplinary areas. The conference considers all aspects of data and decision science, applications, solution design and system challenges in all such new paradigms ranging from theory to applied research."
+    name="description" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+
+  <!-- Favicons -->
+  <link href="img/favicon.ico" rel="icon" />
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900"
+    rel="stylesheet" />
+
+  <!-- Bootstrap CSS File -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Libraries CSS Files -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="vendor/animate/animate.min.css" rel="stylesheet" />
+  <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet" />
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header Start -->
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    (function ($) {
+      // Begin jQuery
+      $(function () {
+        // DOM ready
+        // If a link has a dropdown, add sub menu toggle.
+        $("nav ul li a:not(:only-child)").click(function (e) {
+          $(this).siblings(".nav-dropdown").toggle();
+          // Close one dropdown when selecting another
+          $(".nav-dropdown").not($(this).siblings()).hide();
+          e.stopPropagation();
+        });
+        // Clicking away from dropdown will remove the dropdown class
+        $("html").click(function () {
+          $(".nav-dropdown").hide();
+        });
+        // Toggle open and close nav styles on click
+        $("#nav-toggle").click(function () {
+          $("nav ul").slideToggle();
+        });
+        // Hamburger to X toggle
+        $("#nav-toggle").on("click", function () {
+          this.classList.toggle("active");
+        });
+      }); // end DOM ready
+    })(jQuery); // end jQuery
+  </script>
+
+  <style>
+    table {
+      margin-top: 20px;
+      width: 70%;
+      border-collapse: collapse;
+    }
+
+    th {
+      background-color: #faa41a;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Header Start -->
+  <header id="header">
+    <div class="container-fluid">
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use text logo -->
+        <h2><a href="index.html" class="scrollto">ICDDS</a></h2>
+        <!-- <a href="/">ICDDS <img src="img/logo.png" alt="Logo" /></a> -->
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li>
+            <a href="#">Committee</a>
+
+            <ul class="nav-dropdown">
+              <li>
+                <a href="Organizing-Committee.html">Organizing Committee</a>
+              </li>
+              <li>
+                <a href="Technical-Committee.html" target="_blank" class="menu-active"
+                  rel="noopener noreferrer">Technical Program Committee</a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="CallForPapers.html">Call for Papers</a>
+          <li><a href="CallForPosters.html">Call for Posters</a></li>
+          <!-- <ul class="nav-dropdown">
+                            <li><a href="Foundational-Research.html">Topics of Interest</a></li>
+                            <li><a href="Systems-Research.html">Systems Research</a>
+                            </li>
+                            <li><a href="Applications.html">Applications</a></li>
+                            <li><a href="AuthorGuide.html">Author's Guidelines</a></li>
+                        </ul> -->
+          </li>
+          <li><a href="Sponsorship.html">Sponsorship</a></li>
+          <!-- <li><a href="Program-Schedule.html">Program Schedule</a></li> -->
+
+          <!-- <li>
+              <a href="#">Workshops</a>
+              <ul class="nav-dropdown">
+                <li><a href="smartcity.html">Smart City Stack workshop</a></li>
+                <li>
+                  <a href="girlgeekhack.html"
+                    >GirlGeekHack'23 (Mangalore Subsection Edition)</a
+                  >
+                </li>
+                <li><a href="studentcongress.html">CS Student Congress</a></li>
+              </ul>
+            </li> -->
+
+          <li><a href="speakers.html">Speakers</a></li>
+          <li><a href="venue.html">Venue</a></li>
+          <!-- <li><a href="ticket.html">Tickets</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+
+          <!-- <li>
+              <a href="#">Archives</a>
+
+              <ul class="nav-dropdown">
+                <li><a href="2022.html">2022</a></li>
+              </ul>
+            </li> -->
+          <li><a href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header end -->
+  <!-- Header end -->
+
+  <!-- Banner Section Start-->
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="banner-header">Technical Program Committee</h1>
+            </div>
+            <div class="col-md-6">
+              <p class="banner-nav">
+                <img src="img/IEEE-CS-BangaloreChapterOrange.png" width="190px" /><br />
+                <span class="banner-box">
+                  <a href="index.html">Home</a>
+                  <a href="Technical-Committee.html">Technical Program Committee</a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <table class="center">
+    <tr>
+      <th>Name</th>
+      <th>Affiliation</th>
+    </tr>
+    <tr>
+      <td>Abhishek Ray</td>
+      <td>Kalinga Institute of Industrial Technology Deemed to be University</td>
+    </tr>
+    <tr>
+      <td>Abhishek Singhal</td>
+      <td>Amity University</td>
+    </tr>
+    <tr>
+      <td>Akshay S</td>
+      <td>Amrita Vishwa Vidyapeetham, Mysuru Campus</td>
+    </tr>
+    <tr>
+      <td>Aloke Kumar Saha</td>
+      <td>University of Asia Pacific</td>
+    </tr>
+    <tr>
+      <td>Amit Ranjan Azad</td>
+      <td>Indian Institute of Information Technology Kalyani</td>
+    </tr>
+    <tr>
+      <td>Aniket Sundriyal</td>
+      <td>Amazon</td>
+    </tr>
+    <tr>
+      <td>Anil Kumar</td>
+      <td>Manipal Institute of Technology, Bengaluru</td>
+    </tr>
+    <tr>
+      <td>Ankur Kumar Gupta</td>
+      <td>MAULANA AZAD NATIONAL INSTITUTE OF TECHNOLOGY,BHOPAL</td>
+    </tr>
+    <tr>
+      <td>Antonio Sarasa-Cabezuelo</td>
+      <td>Universidad Complutense de Madrid</td>
+    </tr>
+    <tr>
+      <td>Anupam Pattanayak</td>
+      <td>Raja Narendralal Khan Women's College (Autonomous) </td>
+    </tr>
+    <tr>
+      <td>Anurag Satpathy</td>
+      <td>Missouri University of Science and Technology</td>
+    </tr>
+    <tr>
+      <td>Archana Mathur</td>
+      <td>Nitte Meenakshi Institute of Technology</td>
+    </tr>
+    <tr>
+      <td>Archana Sasi</td>
+      <td>Jain University</td>
+    </tr>
+    <tr>
+      <td>Arup Sarkar</td>
+      <td>KIIT Deemed to be University</td>
+    </tr>
+    <tr>
+      <td>Babu Kumar S</td>
+      <td>CHRIST (DEEMED TO BE UNIVERSITY)</td>
+    </tr>
+    <tr>
+      <td>Bam Bahadur Sinha</td>
+      <td>National Institute of Technology Sikkim</td>
+    </tr>
+    <tr>
+      <td>Benazir Neha</td>
+      <td>KIIT DU</td>
+    </tr>
+    <tr>
+      <td>Bhagath Parabattina</td>
+      <td>Lakireddy Bali Reddy College of Engineering Mylavaram</td>
+    </tr>
+    <tr>
+      <td>Bhaskar Biswas</td>
+      <td>IIIT Kalyani</td>
+    </tr>
+    <tr>
+      <td>Bhaswati Sahoo</td>
+      <td>KIIT</td>
+    </tr>
+    <tr>
+      <td>Bhavani Sankar Panda</td>
+      <td>Raghu Engineering College</td>
+    </tr>
+    <tr>
+      <td>Bhawani Singh Rathore</td>
+      <td>Manipal University Jaipur</td>
+    </tr>
+    <tr>
+      <td>Bikash Sadhukhan</td>
+      <td>Techno International New Town</td>
+    </tr>
+    <tr>
+      <td>Bulla Rajesh</td>
+      <td>Indian Institute of Information Technology SriCity</td>
+    </tr>
+    <tr>
+      <td>Chandani Sharma</td>
+      <td>Maharishi Markandeshwar (Deemed to be University) Mullana, Ambala, Haryana</td>
+    </tr>
+    <tr>
+      <td>Chinmayananda A</td>
+      <td>IIIT Dharwad</td>
+    </tr>
+    <tr>
+      <td>Chinmoy Kar</td>
+      <td>Techno International New Town</td>
+    </tr>
+    <tr>
+      <td>Debjani Mazumder</td>
+      <td>Indian Institute of Technology Kharagpur</td>
+    </tr>
+    <tr>
+      <td>Debraj Chatterjee</td>
+      <td>Techno International New Town</td>
+    </tr>
+    <tr>
+      <td>Dibyajyoti Guha</td>
+      <td>IIIT Dharwad</td>
+    </tr>
+    <tr>
+      <td>Dr Dhananjaya Reddy </td>
+      <td>Government Degree College, Karvetinagaram, Andhra Pradesh </td>
+    </tr>
+    <tr>
+      <td>Dr Kavita M Kelkar</td>
+      <td>K J Somaiya College of Engineering</td>
+    </tr>
+    <tr>
+      <td>Dr Ramesh Cheripelli</td>
+      <td>Vidya Jyothi Institute of Technology</td>
+    </tr>
+    <tr>
+      <td>Dr Subidh Ali</td>
+      <td>IIT Bhilai</td>
+    </tr>
+    <tr>
+      <td>Dr. Abhishek Saxena</td>
+      <td>Manav Rachna University, Faridabad, Haryana</td>
+    </tr>
+    <tr>
+      <td>Dr. Ashoka D V </td>
+      <td>JSSATE BANGALORE</td>
+    </tr>
+    <tr>
+      <td>Dr. Binita H. Thakkar </td>
+      <td>VIVA College of Arts, Commerce and Science, Virar W, Mumbai </td>
+    </tr>
+    <tr>
+      <td>Dr. Kalpesh A Popat</td>
+      <td>Marwadi University</td>
+    </tr>
+    <tr>
+      <td>Dr. Maitri Patel</td>
+      <td>School of Computing and Technology, Institute of Advanced Research</td>
+    </tr>
+    <tr>
+      <td>Dr. Monika .</td>
+      <td>PIET</td>
+    </tr>
+    <tr>
+      <td>Dr. Nataraj K S</td>
+      <td>Indian Institute of Information Technology Dharwad</td>
+    </tr>
+    <tr>
+      <td>Dr. Pramod Kumar S</td>
+      <td>JNNCE, Shimoga</td>
+    </tr>
+    <tr>
+      <td>Dr. Prashant Sharma</td>
+      <td>Vivekananda Global University (VGU), Jaipur (Rajasthan)</td>
+    </tr>
+    <tr>
+      <td>Dr. Praveena T</td>
+      <td>RV COLLEGE OF ENGINEERING</td>
+    </tr>
+    <tr>
+      <td>Dr. R. Ashok Kumar</td>
+      <td>BMS College of Engineering</td>
+    </tr>
+    <tr>
+      <td>Dr. Rahul Soni</td>
+      <td>Navrachana University, Vadodara, Gujarat, India</td>
+    </tr>
+    <tr>
+      <td>Dr. Rajiv Ranjan</td>
+      <td>BIT Sindri Dhanbad</td>
+    </tr>
+    <tr>
+      <td>Dr. Rama Devi Burri</td>
+      <td>Institute of Aeronautical Engineering</td>
+    </tr>
+    <tr>
+      <td>Dr. Ramjeet Singh Yadav</td>
+      <td>Dr. Rammanohar Lohia Avadh University</td>
+    </tr>
+    <tr>
+      <td>Dr. Ratneshwar Ratnesh</td>
+      <td>MIET Meerut</td>
+    </tr>
+    <tr>
+      <td>Dr. Sanjoy Pratihar</td>
+      <td>IIIT Kalyani</td>
+    </tr>
+    <tr>
+      <td>Dr. Shipra Arora</td>
+      <td>DRONACHARYA COLLEGE OF ENGINEERING GURUGRAM </td>
+    </tr>
+    <tr>
+      <td>Dr. Shyam Lal</td>
+      <td>NIT Karnataka </td>
+    </tr>
+    <tr>
+      <td>Dr. Suhaib Ahmed</td>
+      <td>Model Institute of Engineering and Technology, Jammu</td>
+    </tr>
+    <tr>
+      <td>Dr.Sathish Kumar S</td>
+      <td>RNSIT</td>
+    </tr>
+    <tr>
+      <td>Eleni G. Makri</td>
+      <td>Unicaf</td>
+    </tr>
+    <tr>
+      <td>Era Johri</td>
+      <td>KJSCE</td>
+    </tr>
+    <tr>
+      <td>Gautami Uppada</td>
+      <td>KIIT DU</td>
+    </tr>
+    <tr>
+      <td>Hema Priya N</td>
+      <td>PSG College of Technology</td>
+    </tr>
+    <tr>
+      <td>Hung Thanh Bui</td>
+      <td>Data Science Laboratory, Industrial University of Ho Chi Minh city</td>
+    </tr>
+    <tr>
+      <td>Ivan P Martis</td>
+      <td>Dell Technologies</td>
+    </tr>
+    <tr>
+      <td>J Jesy Janet Kumari</td>
+      <td>The Oxford College of Engineering</td>
+    </tr>
+    <tr>
+      <td>Jagadeesha Bhat</td>
+      <td>IIIT</td>
+    </tr>
+    <tr>
+      <td>Jayanti Dansana</td>
+      <td>KIIT,BHUBANESWAR</td>
+    </tr>
+    <tr>
+      <td>Jayapandian N</td>
+      <td>Christ University</td>
+    </tr>
+    <tr>
+      <td>Jaydeep Das</td>
+      <td>KIIT Deemed to be University</td>
+    </tr>
+    <tr>
+      <td>Jyothi Gupta</td>
+      <td>CHRIST UNIVERSITY</td>
+    </tr>
+    <tr>
+      <td>Kaushal Pratap Sengar</td>
+      <td>Madhav Institute of Technology and Science, Gwalior</td>
+    </tr>
+    <tr>
+      <td>Khoirom Johnson Singh</td>
+      <td>Indian Institute of Technology Roorkee</td>
+    </tr>
+    <tr>
+      <td>Maamar Bougherara</td>
+      <td>Ecole Normale superieure kouba</td>
+    </tr>
+    <tr>
+      <td>Mahadevi S</td>
+      <td>Manipal Institute of Technology Bengaluru </td>
+    </tr>
+    <tr>
+      <td>Mallikharjuna Rao K</td>
+      <td>IIIT Naya Raipur</td>
+    </tr>
+    <tr>
+      <td>Manikandan Ramachandran</td>
+      <td>SASTRA Deemed University</td>
+    </tr>
+    <tr>
+      <td>Manoj Kumar Kar</td>
+      <td>Tolani Maritime Institute Pune</td>
+    </tr>
+    <tr>
+      <td>Md Tofael Ahmed</td>
+      <td>Comilla University</td>
+    </tr>
+    <tr>
+      <td>Meenaxi M Raikar</td>
+      <td>K L E Technological University, Hubli</td>
+    </tr>
+    <tr>
+      <td>Minakhi Rout</td>
+      <td>KIIT</td>
+    </tr>
+    <tr>
+      <td>Mithra Venkatesan</td>
+      <td>D.Y.Patil Institute of Technology, Pune</td>
+    </tr>
+    <tr>
+      <td>Mithun B N</td>
+      <td>A P S College of Engineering</td>
+    </tr>
+    <tr>
+      <td>Mriganka Mandal</td>
+      <td>Indian Statistical Institute Kolkata</td>
+    </tr>
+    <tr>
+      <td>Nachiketa Tarasia</td>
+      <td>Kalinga Institute of Industrial Technology deemed to be University</td>
+    </tr>
+    <tr>
+      <td>Nagaraja G S</td>
+      <td>RV COLLEGE OF ENGINEERING</td>
+    </tr>
+    <tr>
+      <td>Nagaratna B B Chittaragi</td>
+      <td>Siddaganga Institute of Technology</td>
+    </tr>
+    <tr>
+      <td>Nahid Fatima</td>
+      <td>Prince Sultan University Riyadh</td>
+    </tr>
+    <tr>
+      <td>Naveen N C Aradhya</td>
+      <td>JSS Academy of Technical Education</td>
+    </tr>
+    <tr>
+      <td>Nebojsa Bacanin</td>
+      <td>Singidunum University</td>
+    </tr>
+    <tr>
+      <td>Nikhil Sharma</td>
+      <td>Delhi Technological University Govt of NCT of Delhi</td>
+    </tr>
+    <tr>
+      <td>Nikhil Kumar Kumar Marriwala</td>
+      <td>University Institute of Engineering and Technology, Kurukshetra University, Kurukshetra</td>
+    </tr>
+    <tr>
+      <td>Nilanjana Adhikari</td>
+      <td>Guru Nanak Institute of Technology</td>
+    </tr>
+    <tr>
+      <td>Nirmal K</td>
+      <td>eBay, California</td>
+    </tr>
+    <tr>
+      <td>Nisha Varghese</td>
+      <td>Christ University</td>
+    </tr>
+    <tr>
+      <td>Nitin K Mishra</td>
+      <td>Parul University</td>
+    </tr>
+    <tr>
+      <td>Parkavi A</td>
+      <td>Ramaiah Institute of Technology</td>
+    </tr>
+    <tr>
+      <td>Payal Godhani</td>
+      <td>Oracle Corp</td>
+    </tr>
+    <tr>
+      <td>Pooja Chaturvedi</td>
+      <td>Institute of Technology, Nirma University, Ahmedabad</td>
+    </tr>
+    <tr>
+      <td>Pragma K</td>
+      <td>IIITD</td>
+    </tr>
+    <tr>
+      <td>Pramit Brata Chanda</td>
+      <td>Kalyani Govt. Engg. College(KGEC, WB)</td>
+    </tr>
+    <tr>
+      <td>Pramit Mazumdar</td>
+      <td>Indian Institute of Information Technology Vadodara</td>
+    </tr>
+    <tr>
+      <td>Prasanta Kr Sen</td>
+      <td>IIT Kharagpur</td>
+    </tr>
+    <tr>
+      <td>Pratibha Moogi</td>
+      <td>Samsung</td>
+    </tr>
+    <tr>
+      <td>Pratima Sarkar</td>
+      <td>Techno International New Town</td>
+    </tr>
+    <tr>
+      <td>Pratyusa Mukherjee</td>
+      <td>Kalinga Institute of Industrial Technology KIIT Deemed to be University</td>
+    </tr>
+    <tr>
+      <td>Pravin Sonwane</td>
+      <td>Poornima College of Engineering</td>
+    </tr>
+    <tr>
+      <td>Prof. K Thamizhmaran</td>
+      <td>GCE, Bodinayakkanur (deputed from Annamalai University)</td>
+    </tr>
+    <tr>
+      <td>R Kavitha</td>
+      <td>SIDDHARTHA INSTITUTE OF ENGINEERING & TECHNOLOGY</td>
+    </tr>
+    <tr>
+      <td>Rahul Makkar</td>
+      <td>IIIT Kota</td>
+    </tr>
+    <tr>
+      <td>Rajani Sangappa Sajjan </td>
+      <td>MIT School of Computing, MIT ADTU Loni Kalbhor Pune </td>
+    </tr>
+    <tr>
+      <td>Rajdeep Dr. Chatterjee</td>
+      <td>KIIT Deemed to be University</td>
+    </tr>
+    <tr>
+      <td>Rajendra Hegadi</td>
+      <td>Indian Institute of Information Technology</td>
+    </tr>
+    <tr>
+      <td>Rajendra Prasath</td>
+      <td>Indian Institute of Information Technology Sri City, Chittoor</td>
+    </tr>
+    <tr>
+      <td>Rajesh Pasupuleti</td>
+      <td>UM</td>
+    </tr>
+    <tr>
+      <td>Rajesh Kanna R</td>
+      <td>Christ University</td>
+    </tr>
+    <tr>
+      <td>Rajkumar Patra</td>
+      <td>Netaji Subhash Engineering College</td>
+    </tr>
+    <tr>
+      <td>Rama Krushna Rath</td>
+      <td>Indian Institute of Information Technology Sri City</td>
+    </tr>
+    <tr>
+      <td>Ramkiran B</td>
+      <td>SASTRA DEEMED UNIVERSITY</td>
+    </tr>
+    <tr>
+      <td>Ricardo Fitas</td>
+      <td>Technical University of Darmstadt</td>
+    </tr>
+    <tr>
+      <td>Ricky Mohanty</td>
+      <td>ASBM UNIVERSITY </td>
+    </tr>
+    <tr>
+      <td>Ritu Raj</td>
+      <td>Jaypee Institute of Information Technology Noida</td>
+    </tr>
+    <tr>
+      <td>Rohini V</td>
+      <td>CHRIST University</td>
+    </tr>
+    <tr>
+      <td>Sandeep Kumar</td>
+      <td>CHRIST (Deemed to be University), Bangalore</td>
+    </tr>
+    <tr>
+      <td>Santosh Kumar </td>
+      <td>Maharishi Markandeshwar deemed to be university , mullana </td>
+    </tr>
+    <tr>
+      <td>Santosh Naik</td>
+      <td>HITAM</td>
+    </tr>
+    <tr>
+      <td>Sara Ali</td>
+      <td>Global Institute of Engineering and Technology</td>
+    </tr>
+    <tr>
+      <td>Sarasvathi V</td>
+      <td>PES University</td>
+    </tr>
+    <tr>
+      <td>Satyabrata Maity</td>
+      <td>Techno International New Town</td>
+    </tr>
+    <tr>
+      <td>Shanmugasundaram Hariharan</td>
+      <td>Vel Tech Rangarajan Dr.Sagunthala R&D Institute of Science and Technology, Chennai,India</td>
+    </tr>
+    <tr>
+      <td>Sharayu A Lokhande</td>
+      <td>Army Institute Of Technology</td>
+    </tr>
+    <tr>
+      <td>Siddharth R</td>
+      <td>Indian Institute of Information Technology Dharwad</td>
+    </tr>
+    <tr>
+      <td>Sourabh Sharma</td>
+      <td>Symbiosis University Indore</td>
+    </tr>
+    <tr>
+      <td>Sridevi Saralaya</td>
+      <td>SJEC</td>
+    </tr>
+    <tr>
+      <td>Srinivas Dr Kanakala</td>
+      <td>VNR VIGNANA JYOTHI INSTITUTE OF ENGINEERING AND TECHNOLOGY</td>
+    </tr>
+    <tr>
+      <td>Subhankar Debnath</td>
+      <td>Centurion University of Technology and Management</td>
+    </tr>
+    <tr>
+      <td>Subhashree Darshana</td>
+      <td>KIIT- DU</td>
+    </tr>
+    <tr>
+      <td>Subhasis Dash</td>
+      <td>KIIT Deemed To Be University</td>
+    </tr>
+    <tr>
+      <td>Suchismita Rout</td>
+      <td>KIIT DU BBSR</td>
+    </tr>
+    <tr>
+      <td>Sujoy Datta</td>
+      <td>KIIT DEEMED TO BE UNIVERSITY</td>
+    </tr>
+    <tr>
+      <td>Sumanta Chakraborty</td>
+      <td>Techno International New Town</td>
+    </tr>
+    <tr>
+      <td>Sunil Ck</td>
+      <td>Indian Institute of Information Technology Dharwad</td>
+    </tr>
+    <tr>
+      <td>Sunil Saumya</td>
+      <td>Indian Institute of Information Technology Dharwad</td>
+    </tr>
+    <tr>
+      <td>Suvadip Hazra</td>
+      <td>IIIT Dharwad</td>
+    </tr>
+    <tr>
+      <td>Syed Wajahat Abbas Rizvi</td>
+      <td>Amity University Uttar Pradesh</td>
+    </tr>
+    <tr>
+      <td>Tanmaykumar Shah</td>
+      <td>JPMorgan Chase</td>
+    </tr>
+    <tr>
+      <td>Thamizhvani T R</td>
+      <td>VISTAS</td>
+    </tr>
+    <tr>
+      <td>Vikas Bajpai</td>
+      <td>The LNMIIT</td>
+    </tr>
+    <tr>
+      <td>Vishal Moyal</td>
+      <td>SVKM's Institute of Technology, Dhule</td>
+    </tr>
+    <tr>
+      <td>Vivekraj K</td>
+      <td>Indian Institute of Information Technology Dharwad</td>
+    </tr>
+  </table>
+  <br /><br />
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="social-links">
+              <a href="https://twitter.com/ieeecsbs" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://facebook.com/ieeecsbsc" class="facebook" target="_blank"><i
+                  class="fa fa-facebook"></i></a>
+              <a href="https://instagram.com/ieeecsbc" class="instagram" target="_blank"><i
+                  class="fa fa-instagram"></i></a>
+              <!-- <a href="#" class="google-plus"><i class="fa fa-youtube"></i></a> -->
+              <a href="https://www.linkedin.com/in/ieeecsbs/" class="linkedin" target="_blank"><i
+                  class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; 2025 <a href="https://www.icdds.org">ICDDS</a>. All Rights
+        Reserved.<br />
+        Organized By
+        <a href="https://ieeecsbangalore.org/">IEEE Computer Society Banglore Chapter</a>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer end -->
+  <!-- #footer end -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/superfish/hoverIntent.js"></script>
+  <script src="vendor/superfish/superfish.min.js"></script>
+  <script src="vendor/waypoints/waypoints.min.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+  <script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+  <!-- Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
