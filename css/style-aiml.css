@@ -422,14 +422,14 @@ section.alt-bg {
 }
 
 .person-card {
-  width: 180px;
+  width: 200px;
   text-align: center;
 }
 
 .person-photo-wrap {
   display: block;
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto 12px;
   border: 2px solid var(--border);
   border-radius: 6px;
@@ -437,6 +437,7 @@ section.alt-bg {
   box-shadow: var(--shadow-sm);
   transition: box-shadow .3s;
   position: relative;
+  background: var(--white);
 }
 
 .person-photo-wrap:hover {
@@ -459,8 +460,9 @@ section.alt-bg {
 .person-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  padding: 8px;
 }
 
 .person-name {

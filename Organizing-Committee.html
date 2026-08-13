@@ -12,6 +12,12 @@
     .back-to-top.visible { opacity:1; pointer-events:auto; }
     .person-card { text-align: center !important; }
     .person-photo-wrap { margin: 0 auto 12px !important; display: block !important; }
+    /* Specific fix for Karthikeya and Piyush Sinha images */
+    img[src="img/Karthikeya-s.jpg"],
+    img[src="img/committee/piyush sinha.jpeg"] {
+      object-fit: cover !important;
+      padding: 0 !important;
+    }
   </style>
 </head>
 <body data-page="committee">
