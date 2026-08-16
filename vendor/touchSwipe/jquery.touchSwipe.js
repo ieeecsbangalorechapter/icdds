@@ -50,7 +50,7 @@
  * $Date: 2012-05-06 (Fri, 05 June 2012) $
  * $version: 1.3.1 	- Bug fixes  - bind() with false as last argument is no longer supported in jQuery 1.6, also, if you just click, the duration is now returned correctly.
  *
- * $Date: 2012-29-07 (Sun, 29 July 2012) $
+ * $Date: 2012-29-07 (Sun, 29 August 2012) $
  * $version: 1.3.2	- Added fallbackToMouseEvents option to NOT capture mouse events on non touch devices.
  * 			- Added "all" fingers value to the fingers property, so any combination of fingers triggers the swipe, allowing event handlers to check the finger count
  *
