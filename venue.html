@@ -18,6 +18,22 @@
     .venue-copy h3 a { color:var(--dark); } .venue-copy h3 a:hover { color:var(--primary); }
     .venue-map { border-radius:8px; overflow:hidden; box-shadow:var(--shadow-sm); }
     .venue-map iframe { display:block; width:100%; height:420px; border:0; }
+    /* Hotel Modal Styles */
+    .hotel-btn { margin-top: 16px; }
+    .modal { display:none; position:fixed; z-index:10000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5); }
+    .modal.show { display:flex; align-items:center; justify-content:center; }
+    .modal-content { background:var(--white); padding:32px; border-radius:8px; max-width:500px; width:90%; box-shadow:var(--shadow-lg); }
+    .modal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+    .modal-header h2 { margin:0; font-size:24px; color:var(--dark); }
+    .modal-close { background:transparent; border:none; font-size:28px; cursor:pointer; color:var(--dark); }
+    .modal-close:hover { color:var(--primary); }
+    .hotel-list { list-style:none; padding:0; }
+    .hotel-item { padding:16px; border:1px solid var(--border); border-radius:6px; margin-bottom:12px; background:var(--light-bg); }
+    .hotel-item:last-child { margin-bottom:0; }
+    .hotel-name { font-weight:600; color:var(--primary); font-size:15px; margin-bottom:8px; }
+    .hotel-name a { color:var(--primary); text-decoration:none; }
+    .hotel-name a:hover { text-decoration:underline; color:var(--primary-dark); }
+    .hotel-distance { color:var(--body-text); font-size:13px; }
   </style>
 </head>
 <body data-page="venue">
@@ -47,6 +63,7 @@
               <p>The Yeshwanthpur campus features state-of-the-art infrastructure and ultra-modern facilities tailored specifically for high-level academic conferences and research initiatives.</p>
               <p>Strategically located in North Bengaluru with exceptional transport connectivity, the campus provides an inspiring, world-class environment. It serves as an ideal hub for industry-academia collaboration, fostering impactful innovation, global networking, and cross-disciplinary knowledge exchange.</p>
               <a href="https://byc.christuniversity.in/" target="_blank" class="btn btn-primary" style="margin-top:8px;">Visit University Website</a>
+              <button id="hotelBtn" class="btn btn-primary hotel-btn">Hotels Near Venue</button>
             </div>
           </div>
           <div class="venue-map fade-in">
@@ -55,12 +72,65 @@
         </div>
       </div>
     </section>
+
+    <!-- Hotels Modal -->
+    <div id="hotelModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Hotels Near Venue</h2>
+          <button class="modal-close" id="closeModal">&times;</button>
+        </div>
+        <ul class="hotel-list">
+          <li class="hotel-item">
+            <div class="hotel-name"><a href="https://maps.app.goo.gl/iVgYCZQWLW9ESaLu9" target="_blank">RD Hotel</a></div>
+            <div class="hotel-distance">Distance: 450m</div>
+          </li>
+          <li class="hotel-item">
+            <div class="hotel-name"><a href="https://maps.app.goo.gl/2nopK6hDRkkLYfwK6" target="_blank">Hotel THanga Airaa</a></div>
+            <div class="hotel-distance">Distance: 450m</div>
+          </li>
+          <li class="hotel-item">
+            <div class="hotel-name"><a href="https://maps.app.goo.gl/ivLp1RZyEaKZWvAT7" target="_blank">Hotel Miracle Meridian - Peenya</a></div>
+            <div class="hotel-distance">Distance: 350m</div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 </div>
 
 <a href="#" class="back-to-top" id="backToTop"><i class="fa fa-chevron-up"></i></a>
 <div id="site-footer"></div>
 <script src="js/site.js"></script>
-<script>window.addEventListener('scroll',function(){var b=document.getElementById('backToTop');if(b)b.classList.toggle('visible',window.scrollY>300);});</script>
+<script>
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('backToTop');
+  if (btn) btn.classList.toggle('visible', window.scrollY > 300);
+});
+
+// Hotel Modal functionality
+const hotelBtn = document.getElementById('hotelBtn');
+const hotelModal = document.getElementById('hotelModal');
+const closeModal = document.getElementById('closeModal');
+
+if (hotelBtn) {
+  hotelBtn.addEventListener('click', function() {
+    hotelModal.classList.add('show');
+  });
+}
+
+if (closeModal) {
+  closeModal.addEventListener('click', function() {
+    hotelModal.classList.remove('show');
+  });
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', function(e) {
+  if (e.target === hotelModal) {
+    hotelModal.classList.remove('show');
+  }
+});
+</script>
 </body>
 </html>
