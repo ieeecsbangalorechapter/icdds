@@ -205,10 +205,15 @@ img {
   z-index: 9999;
   display: none;
   border-radius: 0 0 var(--radius) var(--radius);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, pointer-events 0.3s ease;
 }
 
 .nav-menu li:hover>.nav-dropdown {
   display: block;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .nav-dropdown li a {
