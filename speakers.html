@@ -18,15 +18,12 @@
     .speaker-image img { width:100%; height:100%; object-fit:cover; }
     .speaker-image .placeholder { font-size:72px; color:rgba(255,255,255,0.3); }
     .speaker-content { padding:24px; }
-    .speaker-name { font-size:22px; font-weight:700; color:var(--dark); margin-bottom:8px; }
-    .speaker-designation { font-size:15px; color:var(--primary); font-weight:600; margin-bottom:12px; }
-    .speaker-institution { font-size:14px; color:var(--body-text); font-weight:500; margin-bottom:16px; }
-    .speaker-details { font-size:14px; line-height:1.7; color:var(--body-text); }
-    .speaker-details ul { margin:12px 0; padding-left:20px; }
-    .speaker-details li { margin-bottom:6px; }
-    .speaker-links { margin-top:16px; display:flex; flex-wrap:wrap; gap:12px; }
-    .speaker-links a { display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:var(--light-bg); color:var(--primary); border-radius:6px; font-size:13px; text-decoration:none; transition:background .3s; }
-    .speaker-links a:hover { background:var(--primary); color:#fff; }
+    .speaker-name { font-size:22px; font-weight:700; color:var(--dark); margin-bottom:6px; }
+    .speaker-position { font-size:15px; color:var(--primary); font-weight:600; margin-bottom:4px; }
+    .speaker-affiliation { font-size:14px; color:var(--body-text); font-weight:500; margin-bottom:16px; }
+    .speaker-bio { font-size:14px; line-height:1.7; color:var(--body-text); margin-bottom:16px; }
+    .talk-title { font-size:16px; font-weight:600; color:var(--dark); margin-top:16px; margin-bottom:8px; }
+    .talk-abstract { font-size:14px; line-height:1.7; color:var(--body-text); margin-bottom:16px; }
     .speaker-meta { margin-top:16px; padding-top:16px; border-top:1px solid var(--border); font-size:14px; color:var(--body-text); }
     .speaker-meta strong { color:var(--dark); }
   </style>
@@ -49,7 +46,34 @@
         
         <div class="speakers-grid">
           
-          <!-- Speaker 1: Amit Saha -->
+          <!-- Speaker 1: Dr. Bhavana Kanukurthi -->
+          <article class="speaker-card fade-in">
+            <div class="speaker-image">
+              <img src="img/Bhavana-1.jpg" alt="Dr. Bhavana Kanukurthi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="placeholder" style="display:none;"><i class="fa fa-user-circle"></i></div>
+            </div>
+            <div class="speaker-content">
+              <h3 class="speaker-name">Dr. Bhavana Kanukurthi</h3>
+              <div class="speaker-position">Professor</div>
+              <div class="speaker-affiliation">Indian Institute of Science (IISc), Bengaluru</div>
+              
+              <div class="speaker-bio">
+                Dr. Bhavana Kanukurthi is a Professor in the Department of Computer Science and Automation at IISc. She completed her PhD at Boston University, where her dissertation received the Research Excellence Award from the Department of Computer Science. Her research interests include Cryptography, Coding Theory, Game Theory, and Usability.
+              </div>
+              
+              <h4 class="talk-title">Talk Title: The Good, the Bad and the Rational: A Cryptographer's Dilemma</h4>
+              <div class="talk-abstract">
+                Cryptography lays the mathematical foundations of secure communication and is often treated as a perpetual battle between the good guys and the bad guys. In this general audience talk, using auctions as a test-bed, we strive to make a case for deviating from this characterization and viewing parties as rational agents instead. The talk will be technical in nature, with the final part dedicated to sharing advice and tips for students on conducting research in the AI era.
+              </div>
+              
+              <div class="speaker-meta">
+                <strong>Date:</strong> 11th December 2026<br>
+                <strong>Time:</strong> 10:00 AM – 11:00 AM
+              </div>
+            </div>
+          </article>
+          
+          <!-- Speaker 2: Amit Saha -->
           <article class="speaker-card fade-in">
             <div class="speaker-image">
               <img src="img/amit.jpg" alt="Amit Saha" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -57,57 +81,21 @@
             </div>
             <div class="speaker-content">
               <h3 class="speaker-name">Amit Saha</h3>
-              <div class="speaker-designation">Head of India Site</div>
-              <div class="speaker-institution">DocLens.ai (InsurTech startup)</div>
+              <div class="speaker-position">Head of India Site</div>
+              <div class="speaker-affiliation">DocLens.ai (InsurTech startup)</div>
               
-              <div class="speaker-details">
-                <p><strong>Experience:</strong> 20 years across the Bay Area and Bangalore, working in Machine Learning and Computer Networking.</p>
-                <ul>
-                  <li>Previously technically led advanced ML and MLOps projects at Cisco Meraki</li>
-                  <li>At Juniper Networks, contributed to building the industry's first massively distributed data centre switch</li>
-                  <li>Research collaborations, conference organizing, technical talks and visiting faculty roles at institutes across India</li>
-                </ul>
+              <div class="speaker-bio">
+                Amit Saha has 20 years of experience across the Bay Area and Bangalore, working in Machine Learning and Computer Networking. He previously technically led advanced ML and MLOps projects at Cisco Meraki. At Juniper Networks, he contributed to building the industry's first massively distributed data centre switch. He is also involved in research collaborations, conference organizing, technical talks, and visiting faculty roles at institutes across India.
               </div>
               
-              <div class="speaker-links">
-                <a href="https://www.linkedin.com/in/amsaha" target="_blank" rel="noopener">
-                  <i class="fa fa-linkedin"></i> LinkedIn
-                </a>
+              <h4 class="talk-title">Talk Title: To be announced</h4>
+              <div class="talk-abstract">
+                Abstract to be announced.
               </div>
               
               <div class="speaker-meta">
-                <strong>Talk Date:</strong> 12th December 2026
-              </div>
-            </div>
-          </article>
-          
-          <!-- Speaker 2: Prof. Bhavana Kanukurthi -->
-          <article class="speaker-card fade-in">
-            <div class="speaker-image">
-              <img src="img/Bhavana-1.jpg" alt="Prof. Bhavana Kanukurthi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="placeholder" style="display:none;"><i class="fa fa-user-circle"></i></div>
-            </div>
-            <div class="speaker-content">
-              <h3 class="speaker-name">Prof. Bhavana Kanukurthi</h3>
-              <div class="speaker-designation">Professor</div>
-              <div class="speaker-institution">Computer Science and Automation, Indian Institute of Science (IISc), Bangalore</div>
-              
-              <div class="speaker-details">
-                <p><strong>Research Areas:</strong> Cryptography, Coding Theory, Game Theory and Usability.</p>
-                <ul>
-                  <li>Completed her PhD at Boston University</li>
-                  <li>Her dissertation received the Research Excellence Award from the Department of Computer Science</li>
-                </ul>
-              </div>
-              
-              <div class="speaker-links">
-                <a href="https://www.csa.iisc.ac.in/~bhavana" target="_blank" rel="noopener">
-                  <i class="fa fa-globe"></i> Profile
-                </a>
-              </div>
-              
-              <div class="speaker-meta">
-                <strong>Talk Date:</strong> To be announced
+                <strong>Date:</strong> 12th December 2026<br>
+                <strong>Time:</strong> 9:30 AM – 10:30 AM
               </div>
             </div>
           </article>
@@ -119,33 +107,22 @@
               <div class="placeholder" style="display:none;"><i class="fa fa-user-circle"></i></div>
             </div>
             <div class="speaker-content">
-              <h3 class="speaker-name">Dr. Jaya Sreevalsan Nair, Ph.D.</h3>
-              <div class="speaker-designation">Professor</div>
-              <div class="speaker-institution">IIIT Bangalore (IIIT-B)</div>
+              <h3 class="speaker-name">Dr. Jaya Sreevalsan Nair</h3>
+              <div class="speaker-position">Professor</div>
+              <div class="speaker-affiliation">IIIT Bangalore (IIIT-B)</div>
               
-              <div class="speaker-details">
-                <p><strong>Research Affiliations:</strong> Graphics-Visualization-Computing Lab (GVCL) and E-Health Research Centre.</p>
-                <p><strong>Contact:</strong> jnair@iiitb.ac.in | +91-80-41407777</p>
+              <div class="speaker-bio">
+                Dr. Jaya Sreevalsan Nair is a Professor at IIIT Bangalore with research affiliations to the Graphics-Visualization-Computing Lab (GVCL) and E-Health Research Centre. Her research focuses on visualization, computing, and e-health applications.
               </div>
               
-              <div class="speaker-links">
-                <a href="https://www.linkedin.com/in/jayanair" target="_blank" rel="noopener">
-                  <i class="fa fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://www.iiitb.ac.in/GVCL/team/JayaSreevalsanNair_CV.pdf" target="_blank" rel="noopener">
-                  <i class="fa fa-file-pdf-o"></i> CV
-                </a>
-                <a href="https://dblp.uni-trier.de/pers/hd/s/Sreevalsan=Nair:Jaya" target="_blank" rel="noopener">
-                  <i class="fa fa-book"></i> DBLP
-                </a>
-                <a href="https://sites.google.com/view/jaya-sreevalsan-nair/publications" target="_blank" rel="noopener">
-                  <i class="fa fa-graduation-cap"></i> Publications
-                </a>
+              <h4 class="talk-title">Talk Title: To be announced</h4>
+              <div class="talk-abstract">
+                Abstract to be announced.
               </div>
               
               <div class="speaker-meta">
-                <strong>Talk Date:</strong> 13th December 2026<br>
-                <strong>Talk Time:</strong> 9:30 AM – 10:30 AM
+                <strong>Date:</strong> 13th December 2026<br>
+                <strong>Time:</strong> 9:30 AM – 10:30 AM
               </div>
             </div>
           </article>
