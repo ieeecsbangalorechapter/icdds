@@ -11,21 +11,28 @@
     .back-to-top { position:fixed; right:24px; bottom:24px; width:40px; height:40px; background:var(--primary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; box-shadow:var(--shadow-md); opacity:0; pointer-events:none; transition:opacity .3s; z-index:9000; }
     .back-to-top.visible { opacity:1; pointer-events:auto; }
     
-    .speakers-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:32px; margin-top:40px; }
-    .speaker-card { background:#fff; border-radius:12px; box-shadow:var(--shadow-md); overflow:hidden; transition:transform .3s,box-shadow .3s; }
+    .speakers-grid { display:grid; grid-template-columns:minmax(0,960px); justify-content:center; gap:32px; margin-top:40px; }
+    .speaker-card { display:grid; grid-template-columns:250px minmax(0,1fr); align-items:start; background:#fff; border-radius:12px; box-shadow:var(--shadow-md); overflow:hidden; transition:transform .3s,box-shadow .3s; }
     .speaker-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
-    .speaker-image { width:100%; height:280px; background:linear-gradient(135deg,#667eea 0%,#764ba2 100%); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
-    .speaker-image img { width:100%; height:100%; object-fit:cover; }
-    .speaker-image .placeholder { font-size:72px; color:rgba(255,255,255,0.3); }
-    .speaker-content { padding:24px; }
+    .speaker-image { width:100%; height:250px; background:#f3f4f6; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+    .speaker-image img { width:100%; height:100%; object-fit:contain; }
+    .speaker-image .placeholder { font-size:72px; color:rgba(31,41,55,0.35); }
+    .speaker-content { min-width:0; padding:24px; }
     .speaker-name { font-size:22px; font-weight:700; color:var(--dark); margin-bottom:6px; }
+    .speaker-type { display:inline-block; margin-bottom:12px; padding:5px 10px; border-radius:999px; background:#eef2ff; color:var(--primary); font-size:12px; font-weight:700; }
+    .speaker-type.invited { background:#fff3e0; color:#8a4b08; }
     .speaker-position { font-size:15px; color:var(--primary); font-weight:600; margin-bottom:4px; }
     .speaker-affiliation { font-size:14px; color:var(--body-text); font-weight:500; margin-bottom:16px; }
+    .speaker-profile { display:inline-block; margin-bottom:16px; color:var(--primary); font-size:14px; font-weight:600; }
     .speaker-bio { font-size:14px; line-height:1.7; color:var(--body-text); margin-bottom:16px; }
     .talk-title { font-size:16px; font-weight:600; color:var(--dark); margin-top:16px; margin-bottom:8px; }
     .talk-abstract { font-size:14px; line-height:1.7; color:var(--body-text); margin-bottom:16px; }
     .speaker-meta { margin-top:16px; padding-top:16px; border-top:1px solid var(--border); font-size:14px; color:var(--body-text); }
     .speaker-meta strong { color:var(--dark); }
+    @media (max-width:700px) {
+      .speaker-card { grid-template-columns:1fr; }
+      .speaker-image { width:min(100%,250px); margin:0 auto; }
+    }
   </style>
 </head>
 <body data-page="speakers">
@@ -34,7 +41,7 @@
 
   <div class="page-hero">
     <div class="container">
-      <h1>Keynote Speakers</h1>
+      <h1>Speakers</h1>
       <nav class="breadcrumb-nav"><a href="index.html">Home</a> › Speakers</nav>
     </div>
   </div>
@@ -54,11 +61,13 @@
             </div>
             <div class="speaker-content">
               <h3 class="speaker-name">Dr. Bhavana Kanukurthi</h3>
+              <span class="speaker-type">Keynote Talk</span>
               <div class="speaker-position">Professor</div>
               <div class="speaker-affiliation">Indian Institute of Science (IISc), Bengaluru</div>
+              <a class="speaker-profile" href="https://www.csa.iisc.ac.in/~bhavana/" target="_blank" rel="noopener noreferrer">Profile</a>
 
               <div class="speaker-bio">
-                Dr. Bhavana Kanukurthi is a Professor in the Department of Computer Science and Automation at IISc. She completed her PhD at Boston University, where her dissertation received the Research Excellence Award from the Department of Computer Science. Her research interests include Cryptography, Coding Theory, Game Theory, and Usability.
+                Dr. Bhavana Kanukurthi is a Professor in the Department of Computer Science and Automation at the Indian Institute of Science, Bengaluru. A cryptographer, her research explores foundational questions in cryptography and its connections with coding theory, game theory, and usability. She completed her doctoral studies at Boston University, where her dissertation received the Department of Computer Science Research Excellence Award.
               </div>
               
               <h4 class="talk-title">Talk Title: The Good, the Bad and the Rational: A Cryptographer's Dilemma</h4>
@@ -81,11 +90,13 @@
             </div>
             <div class="speaker-content">
               <h3 class="speaker-name">Amit Saha</h3>
+              <span class="speaker-type">Keynote Talk</span>
               <div class="speaker-position">Head of India Site</div>
               <div class="speaker-affiliation">DocLens.ai (InsurTech startup)</div>
+              <a class="speaker-profile" href="https://www.linkedin.com/in/amsaha" target="_blank" rel="noopener noreferrer">Profile</a>
               
               <div class="speaker-bio">
-                Amit Saha has 20 years of experience across the Bay Area and Bangalore, working in Machine Learning and Computer Networking. He previously technically led advanced ML and MLOps projects at Cisco Meraki. At Juniper Networks, he contributed to building the industry's first massively distributed data centre switch. He is also involved in research collaborations, conference organizing, technical talks, and visiting faculty roles at institutes across India.
+                Amit Saha heads the India site for DocLens.ai, an early-stage InsurTech startup applying agentic AI to complex claims. With two decades across the Bay Area and Bangalore, he has built systems at the intersection of machine learning and networking, with a focus on whole-system architecture. At Cisco Meraki, he technically led advanced ML and MLOps projects. At Juniper Networks, he helped build the industry’s first massively distributed data center switch. He gives back through talks, research collaborations, conference organizing, and visiting faculty roles at institutes across India. Off duty, he plays badminton and enjoys photography.
               </div>
 
               <h4 class="talk-title">Talk Title: To be announced</h4>
@@ -108,21 +119,23 @@
             </div>
             <div class="speaker-content">
               <h3 class="speaker-name">Dr. Jaya Sreevalsan Nair</h3>
+              <span class="speaker-type">Keynote Talk</span>
               <div class="speaker-position">Professor</div>
               <div class="speaker-affiliation">IIIT Bangalore (IIIT-B)</div>
+              <a class="speaker-profile" href="https://www.iiitb.ac.in/faculty/jaya-sreevalsan-nair" target="_blank" rel="noopener noreferrer">Profile</a>
               
               <div class="speaker-bio">
-                Dr. Jaya Sreevalsan Nair is a Professor at IIIT Bangalore with research affiliations to the Graphics-Visualization-Computing Lab (GVCL) and E-Health Research Centre. Her research focuses on visualization, computing, and e-health applications.
+                Dr. Jaya Sreevalsan Nair is a faculty member at the International Institute of Information Technology Bangalore (IIIT-B). She leads the Graphics-Visualization-Computing Lab and is a core team member of the E-Health Research Centre at IIIT-B. Her research interests include spatio-temporal data analysis, data visualization, data science workflow design, and computational science. She works on identifying appropriate ensemble methods in data science workflows for complex datasets. Her recent work includes uncertainty analysis of semantic classification of LiDAR point clouds, multi-hazard risk mapping from multisource GIS data, automated reverse engineering of chart images, and gaze tracking for cognitive load estimation in reading and free-viewing tasks. Her work has been supported by government grants (SERB, DST, GoK) and industry (Intel, IBM). She is an ACM Senior Member and IEEE Senior Member. Jaya is a Senior Associate Editor of IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), an Associate Editor of IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS) and the Journal of the Indian Society of Remote Sensing (JISRS), and an Academic Editor of PLOS Complex Systems (PCSY) and PLOS ONE (PONE). She received the Best Associate Editor of IEEE TCSVT award in 2022 and 2025. She chairs the Special Awards Committee of the IEEE Geoscience and Remote Sensing Society (GRSS) and serves on the Bureau of Indian Standards (BIS) Committee for Airborne LiDAR. She received her Ph.D. in Computer Science from the University of California, Davis, after earning a B.Tech. from IIT Madras and an M.S. from Mississippi State University.
               </div>
               
-              <h4 class="talk-title">Talk Title: To be announced</h4>
+              <h4 class="talk-title">Talk Title: Rethinking Data, Decisions, and Systems with GeoAI</h4>
               <div class="talk-abstract">
-                Abstract to be announced.
+                Location intelligence is ubiquitous in the convergence of data, decisions, and systems. This talk will explore how GeoAI is transforming location intelligence from a passive reporting tool into an active driver of solutions to real-world problems, with a focus on disaster resilience. It will cover three ideas in this context: handling complex multimodal and multisensor datasets; Earth foundation models for predictive intelligence in decision-making; and architecting location-intelligent systems.
               </div>
               
               <div class="speaker-meta">
                 <strong>Date:</strong> 13th December 2026<br>
-                <strong>Time:</strong> 9:30 AM – 10:30 AM
+                <strong>Time:</strong> 9:30 AM – 10:30 AM (60 minutes)
               </div>
             </div>
           </article>
@@ -135,11 +148,13 @@
             </div>
             <div class="speaker-content">
               <h3 class="speaker-name">Dr. Sathyapriya Govindarajulu</h3>
+              <span class="speaker-type invited">Invited Talk</span>
               <div class="speaker-position">Lecturer, School of Business</div>
               <div class="speaker-affiliation">Melbourne Institute of Technology (MIT), Australia</div>
+              <a class="speaker-profile" href="https://www.mit.edu.au/StaffBiography/DrSathyapriyaGovindarajulu" target="_blank" rel="noopener noreferrer">Profile</a>
 
               <div class="speaker-bio">
-                Dr. Sathyapriya Govindarajulu is an academic, researcher, and research supervisor at Melbourne Institute of Technology. She holds PhDs in Finance and Organisational Leadership, and her interdisciplinary work spans responsible AI governance, human rights impact assessment, financial inclusion, banking, green finance, digital transformation, and business analytics. She is also a Business Research Cluster Lead and Principal Research Supervisor at MIT.
+                Dr. Sathyapriya Govindarajulu is a dual-PhD academic in Finance and Banking with more than 15 years of international experience in academia and industry. Her expertise spans finance, banking, accounting, analytics, sustainability, women’s leadership, and generative AI in learning. She has developed undergraduate units, authored five books on business and leadership, and contributes as an author and reviewer for IGI Global Scientific Publishing. She is a Principal Supervisor for Master of Business Research students, guiding research in accounting and management, and is active in research, conference presentations, and community initiatives.
               </div>
 
               <h4 class="talk-title">Talk Title: To be announced</h4>
